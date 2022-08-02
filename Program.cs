@@ -20,12 +20,12 @@ namespace EmployeeDetails
 
             if (empCheck == Is_Full_Time)
             {
-                Total_Employee_Wage = 8 * Wage_per_Hour;
+                Total_Employee_Wage = 12* Wage_per_Hour;
                 Console.WriteLine(Total_Employee_Wage);
             }
             else if (empCheck == If_Part_Time)
             {
-                Total_Employee_Wage = 4 * Wage_per_Hour;
+                Total_Employee_Wage = 8 * Wage_per_Hour;
                 Console.WriteLine(Total_Employee_Wage);
             }
             else
