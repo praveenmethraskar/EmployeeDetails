@@ -18,19 +18,31 @@ namespace EmployeeDetails
             Random random = new Random();
             int empCheck = random.Next(0, 3);
 
-            if (empCheck == Is_Full_Time)
+            //if (empCheck == Is_Full_Time)
+            //{
+            //    Total_Employee_Wage = 12* Wage_per_Hour;
+            //    Console.WriteLine(Total_Employee_Wage);
+            //}
+            //else if (empCheck == If_Part_Time)
+            //{
+            //    Total_Employee_Wage = 8 * Wage_per_Hour;
+            //    Console.WriteLine(Total_Employee_Wage);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Employee is Absent");
+            //}
+
+            switch(empCheck)
             {
-                Total_Employee_Wage = 12* Wage_per_Hour;
-                Console.WriteLine(Total_Employee_Wage);
-            }
-            else if (empCheck == If_Part_Time)
-            {
-                Total_Employee_Wage = 8 * Wage_per_Hour;
-                Console.WriteLine(Total_Employee_Wage);
-            }
-            else
-            {
-                Console.WriteLine("Employee is Absent");
+                case 1: Total_Employee_Wage = 12* Wage_per_Hour;
+                      Console.WriteLine(Total_Employee_Wage);
+                    break;
+                case 2: Total_Employee_Wage = 12* Wage_per_Hour;
+                    Console.WriteLine(Total_Employee_Wage); 
+                    break;
+                    default: Console.WriteLine("Employee is Absent");
+                    break;
             }
         }
 
